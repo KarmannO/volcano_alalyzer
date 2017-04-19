@@ -114,7 +114,7 @@ class ArchiveGetter
         file_put_contents('txt/links.txt', $res_str);
     }
 
-    public function getLinksWithInterval($interval_mins, $loadHtml=false, $saveLinks=false, $loadImg=true)
+    public function getLinksWithInterval($interval_mins, $loadHtml=false, $saveLinks=false, $loadImg=false)
     {
         // Сгенерировали календарь выбранного диапазона лет.
         $calendar = $this->generateCalendar([2015]);
